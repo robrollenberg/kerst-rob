@@ -8,7 +8,7 @@ import BackgroundImage from 'gatsby-background-image';
 import { css } from '@emotion/react';
 
 const Question3 = () => {
-    const withHints = window.sessionStorage.getItem('withHints')
+    const withHints = typeof window !== 'undefined' && window.sessionStorage.getItem('withHints')
         ? window.sessionStorage.getItem('withHints') == 'true'
         : false;
 

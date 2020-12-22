@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import styled from '@emotion/styled';
 
 const Question1 = () => {
-    const withHints = window.sessionStorage.getItem('withHints')
+    const withHints = typeof window !== 'undefined' && window.sessionStorage.getItem('withHints')
         ? window.sessionStorage.getItem('withHints') == 'true'
         : false;
 
