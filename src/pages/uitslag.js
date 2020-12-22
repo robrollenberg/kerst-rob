@@ -8,7 +8,7 @@ import BackgroundImage from 'gatsby-background-image';
 import { css } from '@emotion/react';
 
 const Uitslag = () => {
-    sessionStorage.setItem('withHints', true);
+    window.sessionStorage.setItem('withHints', true);
     const [showResult, setShowResult] = useState(false);
 
     const data = useStaticQuery(

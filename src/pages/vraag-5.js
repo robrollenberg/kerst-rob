@@ -6,8 +6,8 @@ import SEO from '../components/seo';
 import styled from '@emotion/styled';
 
 const Question2 = () => {
-    const withHints = sessionStorage.getItem('withHints')
-        ? sessionStorage.getItem('withHints') == 'true'
+    const withHints = window.sessionStorage.getItem('withHints')
+        ? window.sessionStorage.getItem('withHints') == 'true'
         : false;
 
     let answers = [

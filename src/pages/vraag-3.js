@@ -8,8 +8,8 @@ import BackgroundImage from 'gatsby-background-image';
 import { css } from '@emotion/react';
 
 const Question3 = () => {
-    const withHints = sessionStorage.getItem('withHints')
-        ? sessionStorage.getItem('withHints') == 'true'
+    const withHints = window.sessionStorage.getItem('withHints')
+        ? window.sessionStorage.getItem('withHints') == 'true'
         : false;
 
     const answers = [

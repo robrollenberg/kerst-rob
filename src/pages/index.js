@@ -7,7 +7,7 @@ import styled from '@emotion/styled';
 import BackgroundImage from 'gatsby-background-image';
 
 const IndexPage = () => {
-    sessionStorage.setItem('withHints', false);
+    window.sessionStorage.setItem('withHints', false);
 
     const data = useStaticQuery(
         graphql`
