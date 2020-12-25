@@ -31,23 +31,21 @@ const IndexPage = () => {
     return (
         <Layout>
             <SEO title="Home" />
-            <StyledBackgroundSection>
-                <BackgroundImage fluid={imageData}>
+            <StyledBackgroundSection fluid={imageData}>
                     <StyledInnerWrap>
                         <StyledLink to="/vraag-1/">Ga naar vraag 1</StyledLink>
                     </StyledInnerWrap>
-                </BackgroundImage>
             </StyledBackgroundSection>
         </Layout>
     );
 };
 
-const StyledBackgroundSection = styled.div`
+const StyledBackgroundSection = styled(BackgroundImage)`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -60,13 +58,11 @@ const StyledInnerWrap = styled.div`
     align-items: center;
     width: 600px;
     height: 800px;
-    color: aliceblue;
     text-shadow: 4px 4px rgba(1, 1, 1, 0.8);
     text-transform: uppercase;
 `;
 
 const StyledLink = styled(Link)`
-    color: white;
     border: 1px solid white;
     border-radius: 5px;
     padding: 8px;
