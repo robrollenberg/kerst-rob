@@ -67,7 +67,7 @@ const StyledLink = styled(Link)`
   padding: 8px;
   font-size: 24px;
   text-decoration: none;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 `;
 
 export default IndexPage;
