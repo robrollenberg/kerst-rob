@@ -34,9 +34,14 @@ const Layout = ({ children }) => {
             padding: 0;
             margin: 0;
             background: #111;
-            height: 100%;
             font-family: "PT Mono", monospace;
             color: rgba(255, 255, 255, 0.7);
+            width: 100vw;
+            height: 100vh;
+
+            @media not all and (hover: hover) {
+              height: var(--app-height);
+            }
           }
           h2 {
             color: inherit;
